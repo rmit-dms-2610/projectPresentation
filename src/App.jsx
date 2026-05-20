@@ -64,6 +64,13 @@ function App() {
 			<section>
 				<h2>3. Similar Creative Tools</h2>
 
+				<h3>Joseph Weizenbaum - ELIZA:</h3>
+				{/* !!! Change ALT */}
+				<div style={{display: 'flex', gap: '3rem', width: '50%'}}>
+					<figure style={{flex: 1}}>
+						<img src="/images/ELIZA.png" alt="ELIZA program text log"/>
+					</figure>
+				</div>
 				<h3>Julian Glander - Art Sqool:</h3>
 				{/* !!! Change ALT */}
 				<div style={{display: 'flex', gap: '3rem'}}>
@@ -83,7 +90,7 @@ function App() {
 				</div>
 				<h3>Fractal Fantasy - Unction:</h3>
 				{/* !!! Change ALT */}
-				<div style={{display: 'flex', gap: '3rem'}}>
+				<div style={{display: 'flex', gap: '3rem', width: '50%'}}>
 					<iframe src="https://fractalfantasy.net/#unction" frameBorder="0"></iframe>
 				</div>
 
@@ -96,8 +103,7 @@ function App() {
 
 				<p>
 					"the exploration of how shapes, forms, and patterns emerge in nature through the use of
-					computational modeling and generative
-					systems based on biological, chemical, and physical processes"
+					computational modeling and generative systems based on biological, chemical, and physical processes"
 					<br/>
 					(Webb 2021)
 				</p>
@@ -167,7 +173,7 @@ function App() {
 				}}>►
 				</button>
 
-				<div style={{display: 'flex', gap: '3rem'}}>
+				<div style={{display: 'flex', gap: '3rem', width: '50%'}}>
 					<figure style={{flex: 1}}>
 						<video src="/videos/vangers.mp4" muted={true} className={'vangers'}
 						>
@@ -181,25 +187,10 @@ function App() {
 
 				<h2>5. Core Features:</h2>
 
-				<h3>Dynamic Texture Mapping:</h3>
-
-				<div style={{display: 'flex', gap: '3rem'}}>
-
-					<OAPainter/>
-
-					<figure style={{flex: 1}}>
-						<img src="/images/gts02.png" alt="texture used for Object Animacy painter"/>
-						<figcaption>Source Texture</figcaption>
-					</figure>
-
-				</div>
-
 				<h3>UI Dialogue:</h3>
 
 				<table>
-					<caption>
-						Object Animacy prompt arrays
-					</caption>
+
 					<thead>
 					<tr>
 						<th scope="col">Start</th>
@@ -270,7 +261,25 @@ function App() {
 					</tr>
 
 					</tbody>
+					<caption>
+						<em>Object Animacy prompt arrays</em>
+					</caption>
 				</table>
+
+				<h3>Dynamic Texture Mapping:</h3>
+
+				<div style={{display: 'flex', gap: '3rem'}}>
+
+					<OAPainter/>
+
+					<figure style={{flex: 1}}>
+						<img src="/images/gts02.png" alt="texture used for Object Animacy painter"/>
+						<figcaption>Source Texture</figcaption>
+					</figure>
+
+				</div>
+
+
 
 
 			</section>
